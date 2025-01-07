@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Usage Survey🌐</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #316f7a;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #bacc46; 
+            margin-bottom: 20px;
+            margin-top: 0;
+            font-size: 32px;
+            text-align: center;
+        }
+        .panel {
+            background-color: #dcdcdc; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #919b47; 
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #d35400;
+            color: white;
+        }
+        button:active {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Technology Usage Survey🌐</h1>
+
+<div class="panel">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+    
+    <label for="usage-frequency">How often do you use technology daily/weekly?</label>
+    <input type="text" id="usage-frequency" name="usage-frequency" placeholder="e.g., 2 hours/day">
+    
+    <label for="devices">Which devices do you use regularly? (Select all that apply)</label>
+    <select id="devices" name="devices">
+        <option value="smartphone">Smartphone</option>
+        <option value="laptop">Laptop</option>
+        <option value="tablet">Tablet</option>
+        <option value="desktop">Desktop</option>
+        <option value="other">Other</option>
+    </select>
+    
+    <label for="usage-purpose">What is the primary purpose of your technology usage?</label>
+    <select id="usage-purpose" name="usage-purpose">
+        <option value="work">Work</option>
+        <option value="education">Education</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="social-media">Social Media</option>
+        <option value="gaming">Gaming</option>
+    </select>
+    
+    <label for="tech-skill">How would you rate your tech-savviness?</label>
+    <select id="tech-skill" name="tech-skill">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+    </select>
+    
+    <label for="age-group">Age Group:</label>
+    <select id="age-group" name="age-group">
+        <option value="under-18">Under 18</option>
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-44">35-44</option>
+        <option value="45-54">45-54</option>
+        <option value="55+">55+</option>
+    </select>
+    
+    <label for="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        I agree to provide my information for survey purposes.
+    </label>
+    
+    <button type="submit">Submit Survey</button>
+</div>
+
+</body>
+</html>
